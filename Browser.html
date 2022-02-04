@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Browser</title>
+</head>
+
+<script type="text/javascript" src="Functions.js"></script>
+
+<body>
+
+    <div class="header">
+        <h1 class="title">
+            Buscador
+        </h1>
+        <div class="container">
+            <input type="text" class="input" placeholder="Escribe aqu&#237">
+            <button class="button" onclick="newQuery()">
+                    Buscar
+                </button>
+        </div>
+        <div class="results"></div>
+    </div>
+
+
+    <div class="spinner-case">
+        <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#0095ff">
+                <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(1 1)" stroke-width="2">
+                        <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                        <path d="M36 18c0-9.94-8.06-18-18-18">
+                            <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s"
+                                repeatCount="indefinite" />
+                        </path>
+                    </g>
+                </g>
+            </svg>
+    </div>
+
+    <table class="table"></table>
+
+</body>
+
+</html>
